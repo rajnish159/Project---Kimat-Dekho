@@ -1,0 +1,418 @@
+  {% extends "layout.html" %}
+      {% block body %} 
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="{{ url_for('static', filename='./assets/img/banner_img_03.jpg')}}" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Repr in voluptate</h1>
+                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <p>
+                                    We bring you 100% free CSS templates for your websites. 
+                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start latest & popular products -->
+     
+    <!-- <section class="content-width mt-5 flex flex-col px-3 content:px-0">
+        <div class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center space-x-3 justify-center">
+                <h1 class="class=" style="color:black; font-family:'Roboto Slab', serif;">Latest & Popular Products</h1>
+            </div></div>
+     <div class="row">
+         <div class="col-5">
+            <div class="card-img">
+             <img src="{{ url_for('static', filename='assets/img/watch.webp')}}">
+              </div>
+            <p class="line-clamp-2 text-sm mt-2 min-h-[40px]">Amazfit Pop 2 with Ultra-large 1.78'' HD AMOLED Display, BT Calling, SpO2 Smartwatch</p>
+            
+         </div>
+      <div class="col-5">
+             <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}">
+             <p class="line-clamp-2 text-sm mt-2 min-h-[40px]">Amazfit Pop 2 with Ultra-large 1.78'' HD AMOLED Display, BT Calling, SpO2 Smartwatch</p>
+         </div>
+         <div class="col-5">
+             <img src="{{ url_for('static', filename='assets/img/watch.webp')}}">
+             
+         </div>
+         <div class="col-5">
+             <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}">
+             
+          
+
+         </div>
+         <div class="col-5">
+             <img src="{{ url_for('static', filename='assets/img/watch.webp')}}">
+        
+         </div>
+         <div class="col-5">
+             <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}">
+          
+         </div> 
+
+     -->      <!--   <div class="flex-container"> 
+
+                <div class="p-img"> <img src="" alt="image"></div>
+                <div class="text">jahjsdh djsahd akhdjad sjdhajsd sdkash</div>
+                <div class="rating">3.5</div>
+                <div class="price"> Rs:499</div>
+                <div class="c-name">Amazon</div>
+            </div> -->
+    
+    <header ><h1>Latest & Popular Products</h1></header>
+     
+         <div class="flex-container">
+
+        <div class="first" ><a href="/boat"><img src="{{ url_for('static', filename='assets/img/boat1.jpg')}}" height="230px" width="210px"> </a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> boAt Stone 352 Bluetooth Speaker with 10W RMS Stereo Sound, IPX7 Water Resistance, TWS Feature, Up to 12H Total Playtime, Multi-Compatibility Modes(Raging Black)</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2"> 
+                    <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>1699</h5></div>
+                    <div class="prev-cost"><h5>3490</h5></div>
+                    <div class="percentage"><h5>-51%</h5></div>
+
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+       </div>
+     <div class="first"> <a href="/oppo"> <img src="{{ url_for('static', filename='assets/img/oppo1.jpg')}}" height="230px" width="210px"></a>
+           <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> Oppo A78 5G (Glowing Black, 8GB RAM, 128 Storage) | 5000 mAh Battery with 33W SUPERVOOC Charger| 50MP AI Camera | 90Hz Refresh Rate | with No Cost EMI/Additional Exchange Offers.</div>
+           <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+                <div class="line2"> 
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>18,999</h5></div>
+                    <div class="prev-cost"><h5>21,999</h5></div>
+                    <div class="percentage"><h5>-45%</h5></div>
+                </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+     <div class="first"> <a href="/pandrive"> <img src="{{ url_for('static', filename='assets/img/pan1.jpg')}}" height="230px" width="210px"></a>
+           <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> SanDisk Cruzer Blade 32GB USB Flash Drive.</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>278</h5></div>
+                    <div class="prev-cost"><h5>650</h5></div>
+                    <div class="percentage"><h5>-57%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+     <div class="first"> <a href="/earbuds"> <img src="{{ url_for('static', filename='assets/img/earbuds1.jpg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> boAt Airdopes 141 Bluetooth Truly Wireless in Ear Earbuds with mic, 42H Playtime, Beast Mode(Low Latency Upto 80ms) for Gaming, ENx Tech, ASAP Charge, IWP, IPX4 Water Resistance (Bold Black).</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2"> 
+                    <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>1,299</h5></div>
+                    <div class="prev-cost"><h5>3,995</h5></div>
+                    <div class="percentage"><h5>-67%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+           
+            <div class="first"> <a href="/smartwatch"> <img src="{{ url_for('static', filename='assets/img/bwatch1.jpg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> boAt Newly Launched Wave Call Plus with 1.83" HD Display, ENx™ Tech(Clear Calls), Advanced Bluetooth Calling,Hindi & English Bilingual Support,10 Days Battery,100+ Sports Modes,HR &SpO2(Active Black).</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star "></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>1899</h5></div>
+                    <div class="prev-cost"><h5>3800</h5></div>
+                    <div class="percentage"><h5>-50%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"> <a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"><h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+      <div class="first"><a href="/product"> <img src="{{ url_for('static', filename='assets/img/m31.jpeg')}}" height="230px" width="210px"></a>
+            <div class="line-clamp-2 text-sm mt-2 min-h-[40px]"> hgsdhsgddjahdadh sjhjdj ksjs aksjk afak hawijfha akhj jshd shjhwu dhw</div>
+            <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            <div class="line2">
+                <div class="material-symbols-outlined">currency_rupee</div>
+                    <div class="prst-cost"><h5>499</h5></div>
+                    <div class="prev-cost"><h5>999</h5></div>
+                    <div class="percentage"><h5>45%</h5></div>
+            </div>
+            <div class="line3"> <h4>Amazon</h4></div>
+     </div>
+ </div>
+    </section>
+
+    <!-- End latest & popular products -->
+  
+
+
+    
+
+{% endblock %} 
