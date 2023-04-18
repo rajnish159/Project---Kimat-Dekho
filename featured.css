@@ -1,0 +1,132 @@
+/*.col-5{
+	flex-basis:20%;
+	padding:25px;
+	min-width:200px;
+	margin-bottom:50px;
+	transition:transform 0.5s;
+	
+
+}
+.col-5 img{
+	width:60%;
+}
+.col-5:hover{
+	transform:translateY(-5px);
+}
+.line-clamp-2{
+	    -webkit-line-clamp: 2;
+	        overflow: hidden;
+          display: -webkit-box;
+        -webkit-box-orient: vertical;
+}*/
+header{
+	text-align:center;
+	margin-top:2rem;
+	margin-bottom:2rem;
+}
+.flex-container{
+	background-color: whitesmoke;
+	width:100%;
+	margin:10px;
+	padding:8px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	flex-shrink:40px 40px;
+	align-self:auto;
+}
+.first{
+	width:250px;
+	background:white;
+	margin:10px;
+/*	text-align: center;*/
+}
+.first img{
+	padding: 20px;
+	align-items: center;
+	transition:transform 0.5s;
+}
+.first img:hover{
+	transform:translateY(-5px);}
+.line-clamp-2{
+		margin:5px;
+	padding:5px;
+	width:230px ;
+	height: 60px;
+	background-color:white;
+	color:darkblue;
+	-webkit-line-clamp: 2;
+	        overflow: hidden;
+          display: -webkit-box;
+        -webkit-box-orient: vertical;
+}
+.checked {
+  color: orange;
+ 
+}
+
+.line2{
+	display: flex;
+	margin:5px;
+	padding:5px;
+	width:230px;
+	height:27px;
+	background-color:white;
+	color:black;
+}
+.line3{
+	margin:5px;
+	padding: 0 5px 5px 5px;
+	width:230px;
+	height:27px;
+	background-color:white;
+	color:black;
+}
+.line1 span{
+	background-color: blue;
+	color: white;
+	border-radius: 2px;
+	padding: 1px;
+	margin-left: 4px;
+	font-size: 15px;
+}
+.line2 div {
+	
+	
+	height:27px;
+	
+}
+.material-symbols-outlined{
+	
+}
+.prst-cost h5{
+	font-style: bold;
+	
+	font-size: 17px;
+}
+.prev-cost h5{
+	font-weight: 400;
+	font-size: 13px;
+	 text-decoration: line-through;
+	color: gray;
+margin-left: 8px;
+
+	
+}
+/*.prev-cost{
+	align-self: flex-start;
+	margin-left: 8px;
+	padding-bottom: 0;
+}*/
+
+.percentage h5{
+	color:rgb(255, 0, 0);
+	font-size: 13px;
+	padding-bottom: 0;
+	margin-left: 8px;
+}
+.line3  h4{
+	color: gray;
+	font-size: 15px;
+	font-weight: 400;
+}
